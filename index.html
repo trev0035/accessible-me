@@ -13,56 +13,71 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="site-header">
+  <header class="site-header">
       <h1>Jam Box Studios</h1>
-      <div class="main-nav">
+
+      <nav class="main-nav">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
           <li><a href="#">Reservation</a></li>
           <li><a href="#">Studio</a></li>
         </ul>
-      </div>
-      <img src="https://placekitten.com/1200/900" class="banner">
-    </div>
-    <div class="main-content">
-      <h1>Welcome to Jam Box</h1>
+      </nav>
+
+      <img src="https://placekitten.com/1200/900" alt="Adorable Cat" class="banner">
+  </header>
+
+    <main class="container">
+
+      <section class="main-content">
+      <h2>Welcome to Jam Box</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
-      <div class="owner">
-        <h1>Meet the owner</h1>
+      </section>
+
+      <aside class="owner">
+        <h2>Meet the owner</h2>
         <ul>
           <li>Name: John Doe</li>
           <li>Title: CEO</li>
           <li>Email: johnjoe@jambox.ca</li>
           <li>Phone: 613-000-0000</li>
         </ul>
-        <h1>Address</h1>
-        <p>
+
+        <h2>Address</h2>
+        <address>
           Jambox Studios
           123 Guitar Road,
           Musicville, Danceistan
           B3T 0L0
-        </p>
-      </div>
-      <div class="contact-section">
-        <h1>Contact Us</h1>
+        </address>
+      </aside>
+
+      <section class="contact-section">
+        <h2>Contact Us</h2>
+
         <form action="thanks.html">
-          <label>Full Name</label>
-          <input type="text" placeholder="Full Name">
-          <input type="text" placeholder="Email">
-          <input type="text" placeholder="Subject">
-          <b>Your Message</b>
-          <textarea></textarea>
+          <label for="full-name">Full Name</label>
+          <input id="full-name" type="text" placeholder="Full Name" required>
+
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="Email" required>
+
+          <label for="subject">Subject</label>
+          <input id="subject" type="text" placeholder="Subject" required>
+
+          <label for="message">Your Message</label>
+          <textarea id="message" required></textarea>
+
           <button type="submit">Send</button>
         </form>
-      </div>
-    </div>
-    <div class="site-footer">
+      </section>
+    </main>
+
+    <footer class="site-footer">
       &copy; 2021 Jam Box Studios
-    </div>
-  </div>
+    </footer>
 </body>
 
 </html>
