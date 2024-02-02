@@ -70,6 +70,15 @@ img {
   color: #f2f1ec;
   border-radius: 4px;
 }
+/* MAIL LINK STYLES */
+a[href^="mailto:"] {
+  color: #29382F;
+  text-decoration: none;
+}
+
+a[href^="mailto:"]:hover, a[href^="mailto:"]:focus {
+  text-decoration: underline;
+}
 
 form input,
 form textarea {
@@ -110,5 +119,8 @@ form button:hover {
 .site-footer {
   padding: 2rem 0;
 }
+
+/* BACK TO TOP LINK STYLES */
+
 
 
