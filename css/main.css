@@ -1,4 +1,8 @@
 /* GLOBAL STYLES */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
   background-color: #f2f1ec;
@@ -53,7 +57,7 @@ header {
 
 /* IMAGE STYLES */
 img {
-  width: 95%;
+  width: 100%;
   height: auto; 
 }
 .banner {
@@ -116,6 +120,7 @@ form textarea {
   padding: .5rem 1rem;
   border-radius: 10px;
   border: 2px solid #29382F;
+  box-sizing: border-box; 
 }
 
 form textarea {
