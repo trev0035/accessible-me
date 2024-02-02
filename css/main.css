@@ -1,6 +1,7 @@
+/* GLOBAL STYLES */
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background-color: #f2f1ec; /* change of background for contrast */
+  background-color: #f2f1ec;
   color: #29382F;
   margin: 0;
   padding: 0;
@@ -15,11 +16,23 @@ h6 {
   font-family: 'Stick No Bills', 'Roboto', Helvetica, sans-serif;
 }
 
+h1 {
+  font-size: 2.5em;
+}
+
+h2{ 
+  font-size: 1.5rem;
+}
+header {
+  text-align: center;
+}
+
 .container {
   max-width: 1080px;
   margin: 0 auto;
   padding: 0 1rem;
 }
+
 /* SKIP LINKS STYLES */
 .skip-links{
   list-style: none;
@@ -34,23 +47,35 @@ h6 {
   padding: .5em 1em;
   font-weight: bold;
 }
+.skip-links a:focus{
+  top: 0;
+}
 
 /* IMAGE STYLES */
 img {
-  width: 100%;
+  width: 95%;
+  height: auto; 
+}
+.banner {
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
 }
 
+/* NAV STYLES */
 .main-nav ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  padding: 1rem;
+  padding: 0 1rem 1rem 1rem;
+  gap: 5px;
 }
 
 .main-nav ul li {
   flex: 1;
   text-align: center;
+  flex-basis: auto;
 }
 
 /* Added contrast to nav links */
@@ -58,6 +83,7 @@ img {
   display: block;
   background-color: #cad2c9;
   color: #29382F;
+  border-radius: 20px;
   text-decoration: none;
   font-size: 1.25rem;
   line-height: 40px;
@@ -68,8 +94,9 @@ img {
 .main-nav ul li a:focus {
   background-color: #29382F;
   color: #f2f1ec;
-  border-radius: 4px;
+  border-radius: 20px;
 }
+
 /* MAIL LINK STYLES */
 a[href^="mailto:"] {
   color: #29382F;
@@ -80,12 +107,15 @@ a[href^="mailto:"]:hover, a[href^="mailto:"]:focus {
   text-decoration: underline;
 }
 
+/* FORM STYLES */
 form input,
 form textarea {
   display: block;
   width: 100%;
   margin-bottom: 1rem;
   padding: .5rem 1rem;
+  border-radius: 10px;
+  border: 2px solid #29382F;
 }
 
 form textarea {
@@ -93,8 +123,11 @@ form textarea {
   max-height: 150px;
   height: 150px;
   resize: none;
+  border-radius: 10px;
+  border: 2px solid #29382F;
 }
 
+/* FORM BUTTON STYLES */
 /* Improved design for button */
 form button {
   background-color: #cad2c9;
@@ -116,11 +149,46 @@ form button:hover {
   color: #cad2c9;
 }
 
+/* FOOTER STYLES */
 .site-footer {
+  background-color: #cad2c9;
   padding: 2rem 0;
+  color: #29382F;
+  text-align: center;
+  margin-top: 2rem;
+  width: 100%;
 }
 
-/* BACK TO TOP LINK STYLES */
+/* BACK TO TOP STYLES */
+.button, .back-to-top {
+  background-color: #cad2c9;
+  border: 2px solid #29382F;
+  border-radius: 30px;
+  color: #29382F;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0 15px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#topBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px;
+  right: 30px; 
+  z-index: 99; 
+}
+
+.button:hover, .button:active,
+.back-to-top:hover, .back-to-top:active {
+  background-color: #29382F;
+  color: #cad2c9;
+}
 
 
 
